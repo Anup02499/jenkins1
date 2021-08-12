@@ -7,8 +7,8 @@ pipeline{
        stage('audit') { 
        steps {
              sh '''
-                 git version
-                 docker version
+                 git --version
+                 docker --version
                  '''
               echo " build version ${ver} "
               }
